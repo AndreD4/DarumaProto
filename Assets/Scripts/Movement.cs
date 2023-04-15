@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    //
-
+    Rigidbody myRigidbody;
+    
     void Start()
     {
-        
+        myRigidbody = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.Space))
       {
-        Debug.Log("Pressed space");
+        myRigidbody.AddRelativeForce(0,1,0);
       }
     }
 
