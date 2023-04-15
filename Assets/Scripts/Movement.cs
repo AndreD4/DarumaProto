@@ -5,6 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] float thrustPower = 1f;
+    [SerializeField] float rotationPower = 1f;
     Rigidbody myRigidbody;
     
     void Start()
@@ -30,12 +31,12 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.A))
       {
-          transform.Rotate(Vector3.forward);
+          transform.Rotate(Vector3.forward * Time.deltaTime * rotationPower);
       }
       
       else if (Input.GetKey(KeyCode.D))
       {
-          transform.Rotate(-Vector3.forward);
+          transform.Rotate(-Vector3.forward * Time.deltaTime * rotationPower);
       }
     }
 }
