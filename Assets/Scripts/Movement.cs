@@ -13,14 +13,28 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        ProccessInput();
+        ProccessThrust();
+        ProccessRotation();
     }
 
-    void ProccessInput()
+    void ProccessThrust()
     {
       if (Input.GetKey(KeyCode.Space))
       {
         Debug.Log("Pressed space");
+      }
+    }
+
+    void ProccessRotation()
+    {
+      if (Input.GetKey(KeyCode.A))
+      {
+        Debug.Log("Rotate left");
+      }
+      
+      else if (Input.GetKey(KeyCode.D))
+      {
+        Debug.Log("Rotate right");
       }
     }
 }
