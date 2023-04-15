@@ -25,10 +25,13 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.Space))
       {
-        audioSource.Play(); 
         myRigidbody.AddRelativeForce(Vector3.up * thrustPower * Time.deltaTime);
+        if(!audioSource.isPlaying)
+        {
+        audioSource.Play();
+        } 
       }
-      else if (!audioSource.isPlaying)
+      else
       {
         audioSource.Stop();
       }
