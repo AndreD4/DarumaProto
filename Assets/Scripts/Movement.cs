@@ -30,12 +30,12 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.A))
       {
-        Debug.Log("Rotate left");
+          transform.Rotate(Vector3.forward);
       }
       
       else if (Input.GetKey(KeyCode.D))
       {
-        Debug.Log("Rotate right");
+          transform.Rotate(-Vector3.forward);
       }
     }
 }
