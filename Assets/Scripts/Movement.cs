@@ -23,20 +23,25 @@ public class Movement : MonoBehaviour
     {
       if (Input.GetKey(KeyCode.Space))
       {
-        myRigidbody.AddRelativeForce(Vector3.up * Time.deltaTime * thrustPower);
+        myRigidbody.AddRelativeForce(Vector3.up * thrustPower * Time.deltaTime);
       }
     }
 
     void ProccessRotation()
     {
       if (Input.GetKey(KeyCode.A))
+    {
+      ApplyRotation(rotationPower);
+    }
+
+    else if (Input.GetKey(KeyCode.D))
       {
-          transform.Rotate(Vector3.forward * Time.deltaTime * rotationPower);
-      }
-      
-      else if (Input.GetKey(KeyCode.D))
-      {
-          transform.Rotate(-Vector3.forward * Time.deltaTime * rotationPower);
+          ApplyRotation(-rotationPower);
       }
     }
+
+    void ApplyRotation(float rotationThisFrame)
+  {
+    transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
+  }
 }
