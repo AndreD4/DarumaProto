@@ -2,7 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
-{
+{ 
+    [SerializeField] float  crashDelay = 1f;
+    [SerializeField] float waitForNextLevel = 1f;
+
     void OnCollisionEnter(Collision other)
     {
       switch (other.gameObject.tag)
@@ -12,7 +15,7 @@ public class CollisionHandler : MonoBehaviour
             break;
 
         case "Finish":
-            LoadNextLevel();
+            StartFinishSequence();
             break;
         default:
             StartCrashSequence();
@@ -23,7 +26,13 @@ public class CollisionHandler : MonoBehaviour
     void StartCrashSequence()
     {
       GetComponent<Movement>().enabled = false;
-      Invoke("ReloadLevel", 1f);
+      Invoke("ReloadLevel", crashDelay);
+    }
+
+    void StartFinishSequence()
+    {
+      GetComponent<Movement>().enabled = false;
+      Invoke("LoadNextlevel", waitForNextLevel);
     }
     
     void LoadNextLevel()
