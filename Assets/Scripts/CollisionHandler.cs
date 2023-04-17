@@ -23,16 +23,16 @@ public class CollisionHandler : MonoBehaviour
       }
     }
 
+     void StartFinishSequence()
+    {
+      GetComponent<Movement>().enabled = false;
+      Invoke("LoadNextLevel", waitForNextLevel);
+    }
+    
     void StartCrashSequence()
     {
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
-    }
-
-    void StartFinishSequence()
-    {
-      GetComponent<Movement>().enabled = false;
-      Invoke("LoadNextlevel", waitForNextLevel);
     }
     
     void LoadNextLevel()
