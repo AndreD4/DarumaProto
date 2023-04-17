@@ -46,9 +46,9 @@ public class CollisionHandler : MonoBehaviour
      void StartFinishSequence()
     {
       isTransitioning = true;
-      finishParticles.Play();
       audioSource.Stop();
       audioSource.PlayOneShot(finish);
+      finishParticles.Play();
       GetComponent<Movement>().enabled = false;
       Invoke("LoadNextLevel", waitForNextLevel);
     }
@@ -58,6 +58,7 @@ public class CollisionHandler : MonoBehaviour
       isTransitioning = true;
       audioSource.Stop();
       audioSource.PlayOneShot(crash);
+      crashParticles.Play();
       GetComponent<Movement>().enabled = false;
       Invoke("ReloadLevel", crashDelay);
     }
