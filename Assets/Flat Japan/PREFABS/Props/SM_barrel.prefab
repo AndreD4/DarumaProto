@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8745486494272588920}
   - component: {fileID: 6825982488750913714}
   - component: {fileID: 5953427916797939244}
+  - component: {fileID: 8918029368056549845}
   m_Layer: 0
   m_Name: SM_barrel
   m_TagString: Untagged
@@ -26,9 +27,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5024397158378854759}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,3 +100,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6619638658177629414, guid: d6c09bfe697bbfc4b81aa6f20e52a5a1, type: 3}
+--- !u!114 &8918029368056549845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024397158378854759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92e931676b2954846a3590c23a9b60a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
