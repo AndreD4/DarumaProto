@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8391119840218725493}
   - component: {fileID: 1602913164734294245}
   - component: {fileID: 3507757801393587926}
+  - component: {fileID: 6948316936498117271}
   m_Layer: 0
   m_Name: Daruma
   m_TagString: Player
@@ -30,7 +31,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3265835044594213051}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.0000029504295}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.007066251, y: 0, z: 0.00000046129225}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
@@ -118,7 +119,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 56
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!82 &8391119840218725493
 AudioSource:
   m_ObjectHideFlags: 0
@@ -229,7 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrustPower: 1000
   rotationPower: 100
-  mainJump: {fileID: 8300000, guid: 59510798c346f3a4caef169bccfdda32, type: 3}
+  mainJump: {fileID: 8300000, guid: 3aac2129c8122c9428c79b557baeba23, type: 3}
 --- !u!114 &3507757801393587926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,11 +244,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crashDelay: 2
-  waitForNextLevel: 2
-  finish: {fileID: 8300000, guid: 020ae44e5c0aa2d4f9bcf39a7ca9c760, type: 3}
-  crash: {fileID: 8300000, guid: 020ae44e5c0aa2d4f9bcf39a7ca9c760, type: 3}
+  waitForNextLevel: 4
+  finish: {fileID: 8300000, guid: 5185b6736ff286a4fadb84100a8c8430, type: 3}
+  crash: {fileID: 8300000, guid: ee4368aa3c415c64ca62fbbec9b67843, type: 3}
   finishParticles: {fileID: 560842141086179560}
   crashParticles: {fileID: 9145676170951334375}
+--- !u!114 &6948316936498117271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3265835044594213051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b0fec6df91563458d151f189a24fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &362873000540697590
 PrefabInstance:
   m_ObjectHideFlags: 0

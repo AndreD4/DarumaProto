@@ -10,8 +10,31 @@ EditorBuildSettings:
     guid: 870409ae7d75c5b4f9d3f401fd5dc73c
   - enabled: 1
     path: Assets/Scenes/Village 1.unity
-    guid: 7fddf0ef14879d745920e48356fdf998
+    guid: 056a7473e881d0c4e99da5922ef3d913
   - enabled: 1
-    path: Assets/Scenes/HighMountains.unity
-    guid: f973d6fa324ffa149b45a28ac83afc5a
-  m_configObjects: {}
+    path: Assets/Scenes/Village 2.unity
+    guid: 91a56b26fea3ac74d9939db4f5253361
+  - enabled: 1
+    path: Assets/Scenes/Village 3.unity
+    guid: d6a37e865d8b0c642bb1e93af0774156
+  - enabled: 1
+    path: Assets/Scenes/Village 4.unity
+    guid: 4f8b8959cadc7f94cb0bf669b6111eac
+  - enabled: 1
+    path: Assets/Scenes/Village 5.unity
+    guid: ba3d05013aa4fba4e8431520f107bb53
+  - enabled: 1
+    path: Assets/Scenes/Village 6.unity
+    guid: 258bf2c36d5480349810ac90dbef2ca7
+  - enabled: 1
+    path: Assets/Scenes/Village 7.unity
+    guid: d562f7ad79eb5e04f831951a4fa6f35f
+  - enabled: 1
+    path: Assets/Scenes/Village 8.unity
+    guid: c188b3053deed964ea838e72973c126c
+  - enabled: 1
+    path: Assets/Scenes/village 9.unity
+    guid: d994ce79aaf14e647a20ec3bc62cbfd7
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 2d22f77c73c60984aace4ff6a7dfe7b1, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: d351afa2bc0f9d84fb2a96c18169f417, type: 2}

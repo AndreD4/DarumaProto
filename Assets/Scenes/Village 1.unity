@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028653, g: 0.22571698, b: 0.30692574, a: 1}
+  m_IndirectSpecularColor: {r: 0.22525664, g: 0.2785722, b: 0.3482678, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3053,7 +3053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8918029368056549845, guid: 895baee8be3dace418d925bc93ae859e, type: 3}
       propertyPath: period
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8918029368056549845, guid: 895baee8be3dace418d925bc93ae859e, type: 3}
       propertyPath: movementVector.y
